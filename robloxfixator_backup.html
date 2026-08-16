@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBLOX FIXATOR - ВЗЛОМАН</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #0a0a1a;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        svg {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 1200 850" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <style>
+                @keyframes rubberShake {
+                    0% { transform: translate(0px, 0px) scaleX(1) scaleY(1); }
+                    15% { transform: translate(-4px, 2px) scaleX(1.03) scaleY(0.97); }
+                    30% { transform: translate(4px, -3px) scaleX(0.98) scaleY(1.05); }
+                    45% { transform: translate(-3px, 4px) scaleX(1.02) scaleY(0.98); }
+                    60% { transform: translate(5px, -2px) scaleX(0.99) scaleY(1.02); }
+                    75% { transform: translate(-2px, -4px) scaleX(1.01) scaleY(1.04); }
+                    90% { transform: translate(2px, 3px) scaleX(0.97) scaleY(1.01); }
+                    100% { transform: translate(0px, 0px) scaleX(1) scaleY(1); }
+                }
+
+                /* Глаза дергаются как у психа */
+                @keyframes leftEyeMove {
+                    0% { transform: translate(0px, 0px); }
+                    10% { transform: translate(8px, -5px); }
+                    20% { transform: translate(-5px, 10px); }
+                    30% { transform: translate(10px, 5px); }
+                    40% { transform: translate(-8px, -10px); }
+                    50% { transform: translate(5px, -8px); }
+                    60% { transform: translate(-10px, 5px); }
+                    70% { transform: translate(8px, 10px); }
+                    80% { transform: translate(-5px, -5px); }
+                    90% { transform: translate(5px, 5px); }
+                    100% { transform: translate(0px, 0px); }
+                }
+
+                @keyframes rightEyeMove {
+                    0% { transform: translate(0px, 0px); }
+                    10% { transform: translate(-8px, 5px); }
+                    20% { transform: translate(5px, -10px); }
+                    30% { transform: translate(-10px, -5px); }
+                    40% { transform: translate(8px, 10px); }
+                    50% { transform: translate(-5px, 8px); }
+                    60% { transform: translate(10px, -5px); }
+                    70% { transform: translate(-8px, -10px); }
+                    80% { transform: translate(5px, 5px); }
+                    90% { transform: translate(-5px, -5px); }
+                    100% { transform: translate(0px, 0px); }
+                }
+
+                @keyframes wagTongue {
+                    0% { transform: rotate(-15deg) scaleY(1); }
+                    50% { transform: rotate(25deg) scaleY(1.4); }
+                    100% { transform: rotate(-15deg) scaleY(1); }
+                }
+
+                @keyframes neonPulse {
+                    0%, 100% { text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 20px #FF3D9A, 0 0 40px #8B5CF6; }
+                    50% { text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 40px #FF3D9A, 0 0 80px #4A4BFF; }
+                }
+
+                @keyframes dangerPulse {
+                    0%, 100% { opacity: 0.7; transform: scale(1); }
+                    50% { opacity: 1; transform: scale(1.05); }
+                }
+
+                @keyframes tankMove {
+                    0% { transform: translateX(0px); }
+                    100% { transform: translateX(-50px); }
+                }
+
+                @keyframes bgFlash {
+                    0%, 100% { fill: #1D1D1D; }
+                    50% { fill: #2A0A2A; }
+                }
+
+                @keyframes marquee {
+                    0% { transform: translateX(100%); }
+                    100% { transform: translateX(-100%); }
+                }
+
+                @keyframes blink {
+                    0%, 100% { opacity: 1; }
+                    50% { opacity: 0; }
+                }
+
+                @keyframes virusMove {
+                    0% { transform: translate(0px, 0px) rotate(0deg); }
+                    25% { transform: translate(20px, -15px) rotate(90deg); }
+                    50% { transform: translate(-10px, 25px) rotate(180deg); }
+                    75% { transform: translate(15px, -20px) rotate(270deg); }
+                    100% { transform: translate(0px, 0px) rotate(360deg); }
+                }
+
+                @keyframes bloodDrip {
+                    0% { opacity: 0; transform: translateY(-20px); }
+                    50% { opacity: 1; }
+                    100% { opacity: 0; transform: translateY(20px); }
+                }
+
+                .putin-guy { animation: rubberShake 0.15s infinite; transform-origin: 180px 400px; }
+                .left-pupil { animation: leftEyeMove 1.2s infinite alternate ease-in-out; }
+                .right-pupil { animation: rightEyeMove 1.2s infinite alternate ease-in-out; }
+                .tongue { animation: wagTongue 0.2s infinite; transform-origin: 180px 280px; }
+                .neon-text { animation: neonPulse 1.5s infinite alternate; }
+                .tank-group { animation: tankMove 3s infinite alternate; }
+                .bg-flash { animation: bgFlash 0.5s infinite; }
+                .danger-text { animation: dangerPulse 0.8s infinite; }
+                .marquee-text { animation: marquee 8s linear infinite; }
+                .blink-text { animation: blink 0.5s infinite; }
+                .virus-icon { animation: virusMove 3s infinite linear; }
+                .blood-drop { animation: bloodDrip 2s infinite; }
+            </style>
+
+            <linearGradient id="yellowText" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#FFF066" />
+                <stop offset="100%" stop-color="#FF3D9A" />
+            </linearGradient>
+
+            <linearGradient id="blueText" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#E0E0E0" />
+                <stop offset="100%" stop-color="#8B5CF6" />
+            </linearGradient>
+
+            <linearGradient id="redGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#FF0000" />
+                <stop offset="100%" stop-color="#8B0000" />
+            </linearGradient>
+
+            <linearGradient id="bloodGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FF0000" opacity="0.8" />
+                <stop offset="100%" stop-color="#660000" opacity="0.3" />
+            </linearGradient>
+        </defs>
+
+        <!-- ФОН МИГАЕТ -->
+        <rect x="0" y="0" width="1200" height="850" class="bg-flash" />
+        <rect x="0" y="0" width="1200" height="850" fill="#2A2A2A" opacity="0.3" />
+
+        <!-- КРОВАВЫЕ РАЗВОДЫ -->
+        <path d="M 0 0 C 200 150, 400 50, 600 250 C 800 450, 400 650, 0 850 Z" fill="url(#bloodGrad)" opacity="0.3" />
+        <path d="M 1200 0 C 1000 150, 800 50, 600 250 C 400 450, 800 650, 1200 850 Z" fill="url(#bloodGrad)" opacity="0.3" />
+
+        <!-- КАПЛИ КРОВИ -->
+        <circle cx="150" cy="100" r="8" fill="#FF0000" opacity="0.6" class="blood-drop" />
+        <circle cx="250" cy="200" r="6" fill="#FF0000" opacity="0.4" class="blood-drop" style="animation-delay: 1.5s;" />
+        <circle cx="1000" cy="150" r="10" fill="#FF0000" opacity="0.5" class="blood-drop" style="animation-delay: 0.8s;" />
+        <circle cx="1100" cy="250" r="7" fill="#FF0000" opacity="0.3" class="blood-drop" style="animation-delay: 2.2s;" />
+
+        <!-- ТАНК -->
+        <g class="tank-group" fill="#4A4A4A" stroke="#333333" stroke-width="2">
+            <rect x="700" y="400" width="450" height="120" />
+            <rect x="720" y="500" width="400" height="40" rx="15" />
+            <path d="M 850 320 L 1000 320 L 1050 400 L 800 400 Z" />
+            <rect x="950" y="340" width="200" height="25" />
+            <rect x="1050" y="350" width="140" height="15" />
+            <!-- ОГОНЬ ИЗ ПУШКИ -->
+            <circle cx="800" cy="340" r="25" fill="#FF6600" opacity="0.8">
+                <animate attributeName="r" values="20;35;20" dur="0.3s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values="0.8;0.2;0.8" dur="0.3s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="780" cy="340" r="15" fill="#FFAA00" opacity="0.6">
+                <animate attributeName="r" values="10;25;10" dur="0.3s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values="0.6;0;0.6" dur="0.3s" repeatCount="indefinite" />
+            </circle>
+        </g>
+
+        <!-- ЗЕЛЁНЫЙ ДЫМ -->
+        <path d="M 50 850 C 200 600, 350 600, 500 850 Z" fill="#3DCC8A" opacity="0.3">
+            <animate attributeName="d" values="M 50 850 C 200 600, 350 600, 500 850 Z; M 30 850 C 180 550, 380 580, 520 850 Z; M 50 850 C 200 600, 350 600, 500 850 Z" dur="3s" repeatCount="indefinite" />
+        </path>
+
+        <!-- ========================================== -->
+        <!-- ПУТИН -->
+        <!-- ========================================== -->
+        <g class="putin-guy">
+            <!-- ТЕЛО И ПИДЖАК -->
+            <path d="M 20 350 C 60 310, 150 290, 200 300 C 250 320, 300 400, 340 550 L 250 700 L 50 700 C 0 600, 0 450, 20 350 Z" fill="#808080" />
+            <path d="M 150 300 C 180 340, 200 450, 200 700 L 280 700 C 280 480, 250 350, 220 300 Z" fill="#4D4D4D" />
+            <!-- РУБАШКА -->
+            <path d="M 140 320 L 220 320 L 200 550 L 160 550 Z" fill="#FFFFFF" />
+            <path d="M 160 370 L 200 370 L 190 550 L 170 550 Z" fill="#1A1A1A" />
+
+            <!-- ШЕЯ -->
+            <path d="M 150 300 C 150 270, 210 270, 210 300 L 220 320 L 140 320 Z" fill="#D99868" />
+
+            <!-- ГОЛОВА -->
+            <path d="M 100 170 C 130 80, 230 80, 260 170 C 280 240, 250 310, 210 320 C 190 330, 170 330, 150 320 C 110 310, 80 240, 100 170 Z" fill="#D99868" />
+
+            <!-- МОРЩИНЫ -->
+            <path d="M 150 140 Q 180 130, 210 140" fill="none" stroke="#A66B3E" stroke-width="3" />
+            <path d="M 140 155 Q 180 145, 220 155" fill="none" stroke="#A66B3E" stroke-width="3" />
+
+            <!-- ЛЕВЫЙ ГЛАЗ -->
+            <g>
+                <ellipse cx="155" cy="195" rx="30" ry="25" fill="#FFFFFF" />
+                <ellipse cx="155" cy="195" rx="22" ry="18" fill="#4B6E96" />
+                <circle class="left-pupil" cx="155" cy="195" r="7" fill="#000000" />
+                <circle cx="160" cy="190" r="3" fill="#FFFFFF" opacity="0.6" />
+            </g>
+
+            <!-- ПРАВЫЙ ГЛАЗ -->
+            <g>
+                <ellipse cx="205" cy="195" rx="30" ry="25" fill="#FFFFFF" />
+                <ellipse cx="205" cy="195" rx="22" ry="18" fill="#4B6E96" />
+                <circle class="right-pupil" cx="205" cy="195" r="7" fill="#000000" />
+                <circle cx="210" cy="190" r="3" fill="#FFFFFF" opacity="0.6" />
+            </g>
+
+            <path d="M 130 215 Q 155 225, 180 215" fill="none" stroke="#A66B3E" stroke-width="3" />
+
+            <!-- БРОВИ -->
+            <path d="M 130 160 Q 155 150, 170 165" fill="none" stroke="#3D2B1F" stroke-width="5" stroke-linecap="round" />
+            <path d="M 190 165 Q 205 150, 230 160" fill="none" stroke="#3D2B1F" stroke-width="5" stroke-linecap="round" />
+
+            <!-- НОС -->
+            <path d="M 170 210 Q 180 235, 175 245 L 195 245 Q 190 235, 200 210 Z" fill="#C48456" />
+            <ellipse cx="175" cy="245" rx="12" ry="6" fill="#A65C2E" />
+            <ellipse cx="195" cy="245" rx="12" ry="6" fill="#A65C2E" />
+
+            <!-- РОТ -->
+            <path d="M 130 260 C 160 350, 200 350, 230 260 Z" fill="#1A0A05" />
+            <path d="M 140 265 C 160 280, 200 280, 220 265 Z" fill="#F2E6D0" />
+            <path d="M 150 290 C 170 280, 190 280, 210 290 Z" fill="#F2E6D0" />
+
+            <!-- ЯЗЫК -->
+            <g class="tongue">
+                <path d="M 165 275 C 175 320, 195 320, 195 275 Z" fill="#D94040" />
+            </g>
+
+            <!-- УШИ -->
+            <ellipse cx="110" cy="215" rx="18" ry="30" fill="#D99868" stroke="#A66B3E" stroke-width="2" />
+            <ellipse cx="250" cy="215" rx="18" ry="30" fill="#D99868" stroke="#A66B3E" stroke-width="2" />
+        </g>
+
+        <!-- ВИРУСЫ ЛЕТАЮТ -->
+        <text class="virus-icon" x="850" y="200" font-size="45" opacity="0.8">🦠</text>
+        <text class="virus-icon" x="950" y="300" font-size="40" opacity="0.6" style="animation-delay: 1.2s;">💀</text>
+        <text class="virus-icon" x="800" y="500" font-size="50" opacity="0.7" style="animation-delay: 2.5s;">⚠️</text>
+        <text class="virus-icon" x="1000" y="150" font-size="35" opacity="0.5" style="animation-delay: 0.6s;">🔴</text>
+        <text class="virus-icon" x="750" y="350" font-size="30" opacity="0.4" style="animation-delay: 1.8s;">☣️</text>
+
+        <!-- ========================================== -->
+        <!-- ТЕКСТЫ -->
+        <!-- ========================================== -->
+
+        <!-- ЗАГОЛОВОК -->
+        <g class="neon-text">
+            <text x="620" y="80" font-family="'Arial Black', Impact, sans-serif" font-size="70" font-weight="900" fill="url(#yellowText)" stroke="#000000" stroke-width="8" text-anchor="middle">
+                ROBLOX FIXATOR
+            </text>
+        </g>
+
+        <!-- КРАСНОЕ ПРЕДУПРЕЖДЕНИЕ -->
+        <g class="danger-text">
+            <text x="620" y="160" font-family="'Arial Black', Impact, sans-serif" font-size="55" font-weight="900" fill="#FF0000" stroke="#000000" stroke-width="6" text-anchor="middle">
+                🚨 ЭТОТ САЙТ - СКАМ! 🚨
+            </text>
+        </g>
+
+        <!-- ВЗЛОМАН НАХУЙ -->
+        <rect x="370" y="190" width="500" height="80" fill="#2D2D7D" stroke="#8B5CF6" stroke-width="6" rx="10" />
+        <text x="620" y="245" font-family="'Arial Black', Impact, sans-serif" font-size="60" font-weight="900" fill="url(#blueText)" stroke="#1A1A5E" stroke-width="6" text-anchor="middle">
+            ВЗЛОМАН НАХУЙ
+        </text>
+
+        <!-- INVALIDSYSTEM-1 -->
+        <g class="neon-text">
+            <text x="620" y="330" font-family="'Arial Black', Impact, sans-serif" font-size="65" font-weight="900" fill="#FFFFFF" stroke="#000000" stroke-width="8" text-anchor="middle">
+                INVALIDSYSTEM-1
+            </text>
+        </g>
+
+        <!-- ПРЕДУПРЕЖДЕНИЕ О ВИРУСАХ -->
+        <rect x="100" y="370" width="1000" height="200" fill="#1A0A0A" stroke="#FF0000" stroke-width="6" rx="20" />
+
+        <text x="620" y="415" font-family="'Arial Black', Impact, sans-serif" font-size="36" font-weight="900" fill="#FF4500" text-anchor="middle" class="blink-text">
+            ⚠️ В ЭТОМ .EXE 8 ВИРУСОВ! ⚠️
+        </text>
+
+        <text x="620" y="465" font-family="'Arial', sans-serif" font-size="22" font-weight="bold" fill="#FF3D9A" text-anchor="middle">
+            🔴 МАЙНЕРЫ | RAT | СТИЛЛЕРЫ | КЕЙЛОГГЕРЫ | ИНФОСТИЛЛЕРЫ
+        </text>
+
+        <text x="620" y="505" font-family="'Arial', sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+            ⚡ ОНИ УГОНЯЮТ ТВОЙ КОМПЬЮТЕР ДЛЯ ДОБЫЧИ КРИПТЫ ⚡
+        </text>
+
+        <text x="620" y="545" font-family="'Arial', sans-serif" font-size="18" font-weight="bold" fill="#AAB" text-anchor="middle">
+            ❗ НЕ СКАЧИВАЙТЕ И НЕ ЗАПУСКАЙТЕ .EXE! НЕ ВВОДИТЕ ДАННЫЕ! ❗
+        </text>
+
+        <!-- БЕГУЩАЯ СТРОКА -->
+        <g>
+            <rect x="0" y="620" width="1200" height="45" fill="#2D2D7D" />
+            <text x="1200" y="650" font-family="'Arial Black', sans-serif" font-size="24" font-weight="900" fill="#FF3D9A" class="marquee-text">
+                🦠 ВИРУСЫ! 🦠 МАЙНЕРЫ! 🦠 RAT! 🦠 СТИЛЛЕРЫ! 🦠 НЕ СКАЧИВАЙТЕ! 🦠
+                🦠 ВИРУСЫ! 🦠 МАЙНЕРЫ! 🦠 RAT! 🦠 СТИЛЛЕРЫ! 🦠 НЕ СКАЧИВАЙТЕ! 🦠
+            </text>
+        </g>
+
+        <!-- СХЕМА -->
+        <rect x="150" y="690" width="900" height="70" fill="#0D0D2B" stroke="#8B5CF6" stroke-width="3" rx="15" />
+        <text x="620" y="720" font-family="'Arial', sans-serif" font-size="18" font-weight="bold" fill="#AAB" text-anchor="middle">
+            🎯 СХЕМА: сайт просит "авторизоваться" → скачиваешь .exe → запускаешь → ВИРУСЫ АКТИВИРУЮТСЯ
+        </text>
+        <text x="620" y="745" font-family="'Arial', sans-serif" font-size="16" font-weight="bold" fill="#AAB" text-anchor="middle">
+            → твой ПК становится ботнетом для майнинга, RAT и кражи данных
+        </text>
+
+        <!-- ПОДВАЛ -->
+        <text x="620" y="800" font-family="'Arial', sans-serif" font-size="18" font-weight="bold" fill="#8B5CF6" text-anchor="middle">
+            ⚡ ВЗЛОМАНО INVALIDSYSTEM-1 ⚡
+        </text>
+
+        <text x="620" y="830" font-family="'Arial', sans-serif" font-size="14" font-weight="bold" fill="#666" text-anchor="middle">
+            🔥 РАСПРОСТРАНИ ЭТО ПРЕДУПРЕЖДЕНИЕ! СПАСИ ЛЮДЕЙ ОТ ВИРУСОВ! 🔥
+        </text>
+
+        <!-- ЛОГОТИП -->
+        <g transform="translate(30, 20)">
+            <rect x="0" y="0" width="90" height="55" fill="#1A1A1A" rx="8" stroke="#8B5CF6" stroke-width="3" />
+            <text x="45" y="28" font-family="'Arial Black', sans-serif" font-size="14" font-weight="900" fill="#FF3D9A" text-anchor="middle">INVALID</text>
+            <text x="45" y="45" font-family="'Arial Black', sans-serif" font-size="12" font-weight="900" fill="#8B5CF6" text-anchor="middle">SYSTEM-1</text>
+        </g>
+    </svg>
+</body>
+</html>
